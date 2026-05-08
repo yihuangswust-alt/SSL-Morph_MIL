@@ -10,7 +10,7 @@ This repository provides the code for a semi-supervised multiple instance learni
 
 ## Overview
 
-![Framework](Figures/figure1.pdf)
+![Framework](Figures/figure2_1.png)
 
 The proposed framework contains three main stages:
 
