@@ -1,0 +1,756 @@
+Experiment Name: tcga_ucec_amil_nll_surv_a0.0_lr4e-04_5foldcv_gc32
+#######################
+
+
+
+Load Dataset
+(0, 0) : 0
+(0, 1) : 1
+(1, 0) : 2
+(1, 1) : 3
+(2, 0) : 4
+(2, 1) : 5
+(3, 0) : 6
+(3, 1) : 7
+label column: survival_months
+label dictionary: {(0, 0): 0, (0, 1): 1, (1, 0): 2, (1, 1): 3, (2, 0): 4, (2, 1): 5, (3, 0): 6, (3, 1): 7}
+number of classes: 8
+slide-level counts:  
+ label
+7    198
+1     42
+6     19
+2     18
+5     61
+3    104
+4     19
+0     19
+Name: count, dtype: int64
+Patient-LVL; Number of samples registered in class 0: 19
+Slide-LVL; Number of samples registered in class 0: 19
+Patient-LVL; Number of samples registered in class 1: 42
+Slide-LVL; Number of samples registered in class 1: 42
+Patient-LVL; Number of samples registered in class 2: 18
+Slide-LVL; Number of samples registered in class 2: 18
+Patient-LVL; Number of samples registered in class 3: 104
+Slide-LVL; Number of samples registered in class 3: 104
+Patient-LVL; Number of samples registered in class 4: 19
+Slide-LVL; Number of samples registered in class 4: 19
+Patient-LVL; Number of samples registered in class 5: 61
+Slide-LVL; Number of samples registered in class 5: 61
+Patient-LVL; Number of samples registered in class 6: 19
+Slide-LVL; Number of samples registered in class 6: 19
+Patient-LVL; Number of samples registered in class 7: 198
+Slide-LVL; Number of samples registered in class 7: 198
+(0, 0) : 0
+(0, 1) : 1
+(1, 0) : 2
+(1, 1) : 3
+(2, 0) : 4
+(2, 1) : 5
+(3, 0) : 6
+(3, 1) : 7
+label column: survival_months
+label dictionary: {(0, 0): 0, (0, 1): 1, (1, 0): 2, (1, 1): 3, (2, 0): 4, (2, 1): 5, (3, 0): 6, (3, 1): 7}
+number of classes: 8
+slide-level counts:  
+ label
+5    28
+2    32
+6    33
+0    32
+3    32
+1    27
+4    32
+7    34
+Name: count, dtype: int64
+Patient-LVL; Number of samples registered in class 0: 32
+Slide-LVL; Number of samples registered in class 0: 32
+Patient-LVL; Number of samples registered in class 1: 27
+Slide-LVL; Number of samples registered in class 1: 27
+Patient-LVL; Number of samples registered in class 2: 32
+Slide-LVL; Number of samples registered in class 2: 32
+Patient-LVL; Number of samples registered in class 3: 32
+Slide-LVL; Number of samples registered in class 3: 32
+Patient-LVL; Number of samples registered in class 4: 32
+Slide-LVL; Number of samples registered in class 4: 32
+Patient-LVL; Number of samples registered in class 5: 28
+Slide-LVL; Number of samples registered in class 5: 28
+Patient-LVL; Number of samples registered in class 6: 33
+Slide-LVL; Number of samples registered in class 6: 33
+Patient-LVL; Number of samples registered in class 7: 34
+Slide-LVL; Number of samples registered in class 7: 34
+split_dir ./splits0/5foldcv/tcga_ucec
+################# Settings ###################
+num_splits:  5
+task:  tcga_ucec_survival
+max_epochs:  10
+results_dir:  ./result_semi_sup/lr4e-4
+lr:  0.0004
+experiment:  tcga_ucec_amil_nll_surv_a0.0_lr4e-04_5foldcv_gc32
+reg:  1e-05
+label_frac:  1.0
+bag_loss:  nll_surv
+bag_weight:  0.7
+seed:  4
+model_type:  amil
+weighted_sample:  True
+gc:  32
+opt:  adam
+split_dir:  ./splits0/5foldcv/tcga_ucec
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+7    158
+1     34
+6     15
+2     14
+5     49
+3     83
+4     15
+0     16
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+7    40
+1     8
+5    12
+3    21
+0     3
+6     4
+4     4
+2     4
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 0!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders... 学习率: 0.0004
+
+
+跳过了0个case
+跟新了memory bank384次
+memory bank保存了191个case
+Epoch: 0, train_loss_surv: 1.5460, train_loss: 1.5460, train_c_index: 0.5072
+val/loss_surv, 0.8876454459968954, 0
+val/c-index: 0.7386091127098321, 0
+学习率: 0.00032
+
+
+跳过了0个case
+跟新了memory bank282次
+memory bank保存了191个case
+Epoch: 1, train_loss_surv: 1.2936, train_loss: 1.2936, train_c_index: 0.6427
+val/loss_surv, 0.9840167212144783, 1
+val/c-index: 0.7565947242206235, 1
+Epoch 1: 从 250 个候选伪标签中选择 10 个 (置信度阈值: 0.6867655329988551)
+学习率: 0.00025600000000000004
+
+
+跳过了0个case
+跟新了memory bank191次
+memory bank保存了191个case
+Epoch: 2, train_loss_surv: 0.9142, train_loss: 0.9142, train_c_index: 0.5964
+val/loss_surv, 0.9185445822464923, 2
+val/c-index: 0.473621103117506, 2
+学习率: 0.00020480000000000004
+
+
+跳过了0个case
+跟新了memory bank191次
+memory bank保存了191个case
+Epoch: 3, train_loss_surv: 0.8038, train_loss: 0.8038, train_c_index: 0.6232
+val/loss_surv, 0.5689681819979645, 3
+val/c-index: 0.7697841726618705, 3
+Epoch 3: 从 250 个候选伪标签中选择 20 个 (置信度阈值: 0.6560482582876127)
+学习率: 0.00016384000000000006
+
+
+跳过了0个case
+跟新了memory bank191次
+memory bank保存了191个case
+Epoch: 4, train_loss_surv: 0.7142, train_loss: 0.7142, train_c_index: 0.7847
+val/loss_surv, 0.5597953229492608, 4
+val/c-index: 0.7793764988009593, 4
+学习率: 0.00013107200000000006
+
+
+跳过了0个case
+跟新了memory bank191次
+memory bank保存了191个case
+Epoch: 5, train_loss_surv: 0.6951, train_loss: 0.6951, train_c_index: 0.8091
+val/loss_surv, 0.5802119395957561, 5
+val/c-index: 0.7697841726618705, 5
+Epoch 5: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.7115406845066493)
+学习率: 0.00010485760000000006
+
+
+跳过了0个case
+跟新了memory bank191次
+memory bank保存了191个case
+Epoch: 6, train_loss_surv: 0.5993, train_loss: 0.5993, train_c_index: 0.8605
+val/loss_surv, 0.5962206520489417, 6
+val/c-index: 0.7685851318944844, 6
+学习率: 8.388608000000005e-05
+
+
+跳过了0个case
+跟新了memory bank191次
+memory bank保存了191个case
+Epoch: 7, train_loss_surv: 0.5442, train_loss: 0.5442, train_c_index: 0.8684
+val/loss_surv, 0.5849515921872808, 7
+val/c-index: 0.7829736211031175, 7
+Epoch 7: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.733701778540991)
+学习率: 6.710886400000004e-05
+
+
+跳过了0个case
+跟新了memory bank191次
+memory bank保存了191个case
+Epoch: 8, train_loss_surv: 0.5436, train_loss: 0.5436, train_c_index: 0.8963
+val/loss_surv, 0.6267731190212847, 8
+val/c-index: 0.7829736211031175, 8
+学习率: 5.3687091200000036e-05
+
+
+跳过了0个case
+跟新了memory bank191次
+memory bank保存了191个case
+Epoch: 9, train_loss_surv: 0.5011, train_loss: 0.5011, train_c_index: 0.8973
+val/loss_surv, 0.7297282721701777, 9
+val/c-index: 0.7865707434052758, 9
+Val c_index_small_loss: 0.7866 c_index_final 0.7866
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+1     34
+7    158
+6     15
+2     14
+5     49
+3     83
+4     16
+0     15
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+7    40
+5    12
+4     3
+2     4
+3    21
+1     8
+6     4
+0     4
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 1!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders... 学习率: 0.0004
+
+
+跳过了0个case
+跟新了memory bank384次
+memory bank保存了194个case
+Epoch: 0, train_loss_surv: 1.5296, train_loss: 1.5296, train_c_index: 0.5041
+val/loss_surv, 0.8681351226599267, 0
+val/c-index: 0.5804347826086956, 0
+学习率: 0.00032
+
+
+跳过了0个case
+跟新了memory bank284次
+memory bank保存了194个case
+Epoch: 1, train_loss_surv: 1.2105, train_loss: 1.2105, train_c_index: 0.7344
+val/loss_surv, 0.9539384136539107, 1
+val/c-index: 0.6358695652173914, 1
+Epoch 1: 从 250 个候选伪标签中选择 10 个 (置信度阈值: 0.6168438055623966)
+学习率: 0.00025600000000000004
+
+
+跳过了0个case
+跟新了memory bank194次
+memory bank保存了194个case
+Epoch: 2, train_loss_surv: 0.8347, train_loss: 0.8347, train_c_index: 0.7030
+val/loss_surv, 1.0195392802512895, 2
+val/c-index: 0.5217391304347826, 2
+学习率: 0.00020480000000000004
+
+
+跳过了0个case
+跟新了memory bank194次
+memory bank保存了194个case
+Epoch: 3, train_loss_surv: 0.7888, train_loss: 0.7888, train_c_index: 0.7504
+val/loss_surv, 0.609014953719452, 3
+val/c-index: 0.6826086956521739, 3
+Epoch 3: 从 250 个候选伪标签中选择 20 个 (置信度阈值: 0.5951331280486232)
+学习率: 0.00016384000000000006
+
+
+跳过了0个case
+跟新了memory bank194次
+memory bank保存了194个case
+Epoch: 4, train_loss_surv: 0.6716, train_loss: 0.6716, train_c_index: 0.7637
+val/loss_surv, 0.654075088010965, 4
+val/c-index: 0.6923913043478261, 4
+学习率: 0.00013107200000000006
+
+
+跳过了0个case
+跟新了memory bank194次
+memory bank保存了194个case
+Epoch: 5, train_loss_surv: 0.6079, train_loss: 0.6079, train_c_index: 0.8303
+val/loss_surv, 0.6077034967941776, 5
+val/c-index: 0.7130434782608696, 5
+Epoch 5: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.6109182260725119)
+学习率: 0.00010485760000000006
+
+
+跳过了0个case
+跟新了memory bank194次
+memory bank保存了194个case
+Epoch: 6, train_loss_surv: 0.5563, train_loss: 0.5563, train_c_index: 0.8852
+val/loss_surv, 0.772354400086139, 6
+val/c-index: 0.7043478260869566, 6
+学习率: 8.388608000000005e-05
+
+
+跳过了0个case
+跟新了memory bank194次
+memory bank保存了194个case
+Epoch: 7, train_loss_surv: 0.5793, train_loss: 0.5793, train_c_index: 0.8974
+val/loss_surv, 0.6900566512170675, 7
+val/c-index: 0.7228260869565217, 7
+Epoch 7: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.6165243377840723)
+学习率: 6.710886400000004e-05
+
+
+跳过了0个case
+跟新了memory bank194次
+memory bank保存了194个case
+Epoch: 8, train_loss_surv: 0.6218, train_loss: 0.6218, train_c_index: 0.8571
+val/loss_surv, 0.7233926153312495, 8
+val/c-index: 0.7206521739130435, 8
+学习率: 5.3687091200000036e-05
+
+
+跳过了0个case
+跟新了memory bank194次
+memory bank保存了194个case
+Epoch: 9, train_loss_surv: 0.5773, train_loss: 0.5773, train_c_index: 0.8864
+val/loss_surv, 0.6328370751774249, 9
+val/c-index: 0.7347826086956522, 9
+Val c_index_small_loss: 0.7043 c_index_final 0.7348
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+7    158
+1     34
+6     15
+2     15
+5     48
+3     84
+4     15
+0     15
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+1     8
+7    40
+5    13
+3    20
+2     3
+6     4
+4     4
+0     4
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 2!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders... 学习率: 0.0004
+
+
+跳过了0个case
+跟新了memory bank384次
+memory bank保存了197个case
+Epoch: 0, train_loss_surv: 1.4937, train_loss: 1.4937, train_c_index: 0.5482
+val/loss_surv, 0.7171407356703033, 0
+val/c-index: 0.6630901287553648, 0
+学习率: 0.00032
+
+
+跳过了0个case
+跟新了memory bank297次
+memory bank保存了197个case
+Epoch: 1, train_loss_surv: 1.1756, train_loss: 1.1756, train_c_index: 0.7090
+val/loss_surv, 1.0651511530547093, 1
+val/c-index: 0.6641630901287554, 1
+Epoch 1: 从 250 个候选伪标签中选择 10 个 (置信度阈值: 0.6220602773425601)
+学习率: 0.00025600000000000004
+
+
+跳过了0个case
+跟新了memory bank197次
+memory bank保存了197个case
+Epoch: 2, train_loss_surv: 0.8260, train_loss: 0.8260, train_c_index: 0.6594
+val/loss_surv, 0.7087952939521832, 2
+val/c-index: 0.6437768240343348, 2
+学习率: 0.00020480000000000004
+
+
+跳过了0个case
+跟新了memory bank197次
+memory bank保存了197个case
+Epoch: 3, train_loss_surv: 0.7083, train_loss: 0.7083, train_c_index: 0.7610
+val/loss_surv, 0.6294990708750751, 3
+val/c-index: 0.677038626609442, 3
+Epoch 3: 从 250 个候选伪标签中选择 20 个 (置信度阈值: 0.647243356613333)
+学习率: 0.00016384000000000006
+
+
+跳过了0个case
+跟新了memory bank197次
+memory bank保存了197个case
+Epoch: 4, train_loss_surv: 0.6135, train_loss: 0.6135, train_c_index: 0.7502
+val/loss_surv, 0.6759818814304405, 4
+val/c-index: 0.6727467811158798, 4
+学习率: 0.00013107200000000006
+
+
+跳过了0个case
+跟新了memory bank197次
+memory bank保存了197个case
+Epoch: 5, train_loss_surv: 0.5945, train_loss: 0.5945, train_c_index: 0.8140
+val/loss_surv, 0.7255503095921085, 5
+val/c-index: 0.6555793991416309, 5
+Epoch 5: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.6554726191410133)
+学习率: 0.00010485760000000006
+
+
+跳过了0个case
+跟新了memory bank197次
+memory bank保存了197个case
+Epoch: 6, train_loss_surv: 0.7035, train_loss: 0.7035, train_c_index: 0.7851
+val/loss_surv, 0.657936607140679, 6
+val/c-index: 0.6630901287553648, 6
+学习率: 8.388608000000005e-05
+
+
+跳过了0个case
+跟新了memory bank197次
+memory bank保存了197个case
+Epoch: 7, train_loss_surv: 0.5849, train_loss: 0.5849, train_c_index: 0.8663
+val/loss_surv, 0.6463461504511846, 7
+val/c-index: 0.6963519313304721, 7
+Epoch 7: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.6542758607951946)
+学习率: 6.710886400000004e-05
+
+
+跳过了0个case
+跟新了memory bank197次
+memory bank保存了197个case
+Epoch: 8, train_loss_surv: 0.5250, train_loss: 0.5250, train_c_index: 0.8810
+val/loss_surv, 0.7125342975996318, 8
+val/c-index: 0.6824034334763949, 8
+学习率: 5.3687091200000036e-05
+
+
+跳过了0个case
+跟新了memory bank197次
+memory bank保存了197个case
+Epoch: 9, train_loss_surv: 0.4737, train_loss: 0.4737, train_c_index: 0.9006
+val/loss_surv, 0.7282991552644186, 9
+val/c-index: 0.6866952789699571, 9
+Val c_index_small_loss: 0.6867 c_index_final 0.6867
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+7    159
+1     33
+6     15
+2     15
+5     49
+3     83
+4     15
+0     15
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+7    39
+3    21
+5    12
+4     4
+6     4
+2     3
+1     9
+0     4
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 3!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders... 学习率: 0.0004
+
+
+跳过了0个case
+跟新了memory bank384次
+memory bank保存了198个case
+Epoch: 0, train_loss_surv: 1.5534, train_loss: 1.5534, train_c_index: 0.5074
+val/loss_surv, 0.7589253188731769, 0
+val/c-index: 0.7155858930602957, 0
+学习率: 0.00032
+
+
+跳过了0个case
+跟新了memory bank291次
+memory bank保存了198个case
+Epoch: 1, train_loss_surv: 1.3126, train_loss: 1.3126, train_c_index: 0.5723
+val/loss_surv, 1.0715787407631676, 1
+val/c-index: 0.7508532423208191, 1
+Epoch 1: 从 250 个候选伪标签中选择 10 个 (置信度阈值: 0.6787823736085989)
+学习率: 0.00025600000000000004
+
+
+跳过了0个case
+跟新了memory bank198次
+memory bank保存了198个case
+Epoch: 2, train_loss_surv: 0.9578, train_loss: 0.9578, train_c_index: 0.6273
+val/loss_surv, 0.8835613637541732, 2
+val/c-index: 0.7030716723549488, 2
+学习率: 0.00020480000000000004
+
+
+跳过了0个case
+跟新了memory bank198次
+memory bank保存了198个case
+Epoch: 3, train_loss_surv: 0.9122, train_loss: 0.9122, train_c_index: 0.5911
+val/loss_surv, 0.6566161342392055, 3
+val/c-index: 0.7542662116040956, 3
+Epoch 3: 从 250 个候选伪标签中选择 20 个 (置信度阈值: 0.6337534768729026)
+学习率: 0.00016384000000000006
+
+
+跳过了0个case
+跟新了memory bank198次
+memory bank保存了198个case
+Epoch: 4, train_loss_surv: 0.7500, train_loss: 0.7500, train_c_index: 0.7288
+val/loss_surv, 0.5853865164681338, 4
+val/c-index: 0.7815699658703071, 4
+学习率: 0.00013107200000000006
+
+
+跳过了0个case
+跟新了memory bank198次
+memory bank保存了198个case
+Epoch: 5, train_loss_surv: 0.6487, train_loss: 0.6487, train_c_index: 0.8034
+val/loss_surv, 0.5853663525194861, 5
+val/c-index: 0.7906712172923777, 5
+Epoch 5: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.6240544054929836)
+学习率: 0.00010485760000000006
+
+
+跳过了0个case
+跟新了memory bank198次
+memory bank保存了198个case
+Epoch: 6, train_loss_surv: 0.6207, train_loss: 0.6207, train_c_index: 0.8157
+val/loss_surv, 0.6202430172415916, 6
+val/c-index: 0.7667804323094426, 6
+学习率: 8.388608000000005e-05
+
+
+跳过了0个case
+跟新了memory bank198次
+memory bank保存了198个case
+Epoch: 7, train_loss_surv: 0.5767, train_loss: 0.5767, train_c_index: 0.8580
+val/loss_surv, 0.6147795148620693, 7
+val/c-index: 0.7929465301478953, 7
+Epoch 7: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.6317325564757291)
+学习率: 6.710886400000004e-05
+
+
+跳过了0个case
+跟新了memory bank198次
+memory bank保存了198个case
+Epoch: 8, train_loss_surv: 0.5422, train_loss: 0.5422, train_c_index: 0.8685
+val/loss_surv, 0.6431379489901398, 8
+val/c-index: 0.7986348122866894, 8
+学习率: 5.3687091200000036e-05
+
+
+跳过了0个case
+跟新了memory bank198次
+memory bank保存了198个case
+Epoch: 9, train_loss_surv: 0.5004, train_loss: 0.5004, train_c_index: 0.8882
+val/loss_surv, 0.6668259249515055, 9
+val/c-index: 0.8145620022753128, 9
+Val c_index_small_loss: 0.8146 c_index_final 0.8146
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+7    157
+1     34
+6     15
+2     15
+5     51
+3     82
+4     16
+0     14
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+7    41
+5    10
+3    22
+1     8
+2     3
+6     4
+4     3
+0     5
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 4!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders... 学习率: 0.0004
+
+
+跳过了0个case
+跟新了memory bank384次
+memory bank保存了199个case
+Epoch: 0, train_loss_surv: 1.5369, train_loss: 1.5369, train_c_index: 0.5133
+val/loss_surv, 0.7721699733907977, 0
+val/c-index: 0.5699888017917133, 0
+学习率: 0.00032
+
+
+跳过了0个case
+跟新了memory bank300次
+memory bank保存了199个case
+Epoch: 1, train_loss_surv: 1.3503, train_loss: 1.3503, train_c_index: 0.6116
+val/loss_surv, 1.123146876692772, 1
+val/c-index: 0.6707726763717805, 1
+Epoch 1: 从 250 个候选伪标签中选择 10 个 (置信度阈值: 0.6269109630009648)
+学习率: 0.00025600000000000004
+
+
+跳过了0个case
+跟新了memory bank199次
+memory bank保存了199个case
+Epoch: 2, train_loss_surv: 0.9544, train_loss: 0.9544, train_c_index: 0.5802
+val/loss_surv, 0.7362910251443585, 2
+val/c-index: 0.5733482642777156, 2
+学习率: 0.00020480000000000004
+
+
+跳过了0个case
+跟新了memory bank199次
+memory bank保存了199个case
+Epoch: 3, train_loss_surv: 0.9519, train_loss: 0.9519, train_c_index: 0.4696
+val/loss_surv, 0.6597572269820375, 3
+val/c-index: 0.6730123180291153, 3
+Epoch 3: 从 250 个候选伪标签中选择 20 个 (置信度阈值: 0.5857868824384078)
+学习率: 0.00016384000000000006
+
+
+跳过了0个case
+跟新了memory bank199次
+memory bank保存了199个case
+Epoch: 4, train_loss_surv: 0.8513, train_loss: 0.8513, train_c_index: 0.6218
+val/loss_surv, 0.6035050463785107, 4
+val/c-index: 0.7133258678611423, 4
+学习率: 0.00013107200000000006
+
+
+跳过了0个case
+跟新了memory bank199次
+memory bank保存了199个case
+Epoch: 5, train_loss_surv: 0.8119, train_loss: 0.8119, train_c_index: 0.6260
+val/loss_surv, 0.5870679976845471, 5
+val/c-index: 0.7144456886898096, 5
+Epoch 5: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.5698235265701136)
+学习率: 0.00010485760000000006
+
+
+跳过了0个case
+跟新了memory bank199次
+memory bank保存了199个case
+Epoch: 6, train_loss_surv: 0.7975, train_loss: 0.7975, train_c_index: 0.6863
+val/loss_surv, 0.5919493194378447, 6
+val/c-index: 0.7446808510638298, 6
+学习率: 8.388608000000005e-05
+
+
+跳过了0个case
+跟新了memory bank199次
+memory bank保存了199个case
+Epoch: 7, train_loss_surv: 0.7283, train_loss: 0.7283, train_c_index: 0.8398
+val/loss_surv, 0.5894289919912504, 7
+val/c-index: 0.7469204927211646, 7
+Epoch 7: 从 250 个候选伪标签中选择 25 个 (置信度阈值: 0.6289404552209278)
+学习率: 6.710886400000004e-05
+
+
+跳过了0个case
+跟新了memory bank199次
+memory bank保存了199个case
+Epoch: 8, train_loss_surv: 0.7083, train_loss: 0.7083, train_c_index: 0.8413
+val/loss_surv, 0.5838744823510448, 8
+val/c-index: 0.7536394176931691, 8
+学习率: 5.3687091200000036e-05
+
+
+跳过了0个case
+跟新了memory bank199次
+memory bank保存了199个case
+Epoch: 9, train_loss_surv: 0.6398, train_loss: 0.6398, train_c_index: 0.8801
+val/loss_surv, 0.6000690927661102, 9
+val/c-index: 0.7547592385218365, 9
+Val c_index_small_loss: 0.7548 c_index_final 0.7548
+c-index small loss [0.7865707434052758, 0.7043478260869566, 0.6866952789699571, 0.8145620022753128, 0.7547592385218365]
+Average c-index small loss 0.7493870178518678
+/n
+c-index final [0.7865707434052758, 0.7347826086956522, 0.6866952789699571, 0.8145620022753128, 0.7547592385218365]
+Average c-index final 0.7554739743736069
+finished!
