@@ -1,0 +1,490 @@
+Experiment Name: tcga_ucec_amil_nll_surv_a0.0_lr4e-04_5foldcv_gc32
+#######################
+
+
+
+Load Dataset
+(0, 0) : 0
+(0, 1) : 1
+(1, 0) : 2
+(1, 1) : 3
+(2, 0) : 4
+(2, 1) : 5
+(3, 0) : 6
+(3, 1) : 7
+label column: survival_months
+label dictionary: {(0, 0): 0, (0, 1): 1, (1, 0): 2, (1, 1): 3, (2, 0): 4, (2, 1): 5, (3, 0): 6, (3, 1): 7}
+number of classes: 8
+slide-level counts:  
+ label
+7    198
+1     42
+6     19
+2     18
+5     61
+3    104
+4     19
+0     19
+Name: count, dtype: int64
+Patient-LVL; Number of samples registered in class 0: 19
+Slide-LVL; Number of samples registered in class 0: 19
+Patient-LVL; Number of samples registered in class 1: 42
+Slide-LVL; Number of samples registered in class 1: 42
+Patient-LVL; Number of samples registered in class 2: 18
+Slide-LVL; Number of samples registered in class 2: 18
+Patient-LVL; Number of samples registered in class 3: 104
+Slide-LVL; Number of samples registered in class 3: 104
+Patient-LVL; Number of samples registered in class 4: 19
+Slide-LVL; Number of samples registered in class 4: 19
+Patient-LVL; Number of samples registered in class 5: 61
+Slide-LVL; Number of samples registered in class 5: 61
+Patient-LVL; Number of samples registered in class 6: 19
+Slide-LVL; Number of samples registered in class 6: 19
+Patient-LVL; Number of samples registered in class 7: 198
+Slide-LVL; Number of samples registered in class 7: 198
+(0, 0) : 0
+(0, 1) : 1
+(1, 0) : 2
+(1, 1) : 3
+(2, 0) : 4
+(2, 1) : 5
+(3, 0) : 6
+(3, 1) : 7
+label column: survival_months
+label dictionary: {(0, 0): 0, (0, 1): 1, (1, 0): 2, (1, 1): 3, (2, 0): 4, (2, 1): 5, (3, 0): 6, (3, 1): 7}
+number of classes: 8
+slide-level counts:  
+ label
+5    28
+2    32
+6    33
+0    32
+3    32
+1    27
+4    32
+7    34
+Name: count, dtype: int64
+Patient-LVL; Number of samples registered in class 0: 32
+Slide-LVL; Number of samples registered in class 0: 32
+Patient-LVL; Number of samples registered in class 1: 27
+Slide-LVL; Number of samples registered in class 1: 27
+Patient-LVL; Number of samples registered in class 2: 32
+Slide-LVL; Number of samples registered in class 2: 32
+Patient-LVL; Number of samples registered in class 3: 32
+Slide-LVL; Number of samples registered in class 3: 32
+Patient-LVL; Number of samples registered in class 4: 32
+Slide-LVL; Number of samples registered in class 4: 32
+Patient-LVL; Number of samples registered in class 5: 28
+Slide-LVL; Number of samples registered in class 5: 28
+Patient-LVL; Number of samples registered in class 6: 33
+Slide-LVL; Number of samples registered in class 6: 33
+Patient-LVL; Number of samples registered in class 7: 34
+Slide-LVL; Number of samples registered in class 7: 34
+split_dir ./splits0/5foldcv/tcga_ucec
+################# Settings ###################
+num_splits:  5
+task:  tcga_ucec_survival
+max_epochs:  10
+results_dir:  ./result_semi_sup/lr4e-4
+lr:  0.0004
+experiment:  tcga_ucec_amil_nll_surv_a0.0_lr4e-04_5foldcv_gc32
+reg:  1e-05
+label_frac:  1.0
+bag_loss:  nll_surv
+bag_weight:  0.7
+seed:  4
+model_type:  amil
+weighted_sample:  True
+gc:  32
+opt:  adam
+split_dir:  ./splits0/5foldcv/tcga_ucec
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+7    158
+1     34
+6     15
+2     14
+5     49
+3     83
+4     15
+0     16
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+7    40
+1     8
+5    12
+3    21
+0     3
+6     4
+4     4
+2     4
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 0!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders... 
+
+Epoch: 0, train_loss_surv: 1.5452, train_loss: 1.5452, train_c_index: 0.5003
+val/loss_surv, 1.0961381095694378, 0
+val/c-index: 0.7086330935251799, 0
+
+Epoch: 1, train_loss_surv: 1.3724, train_loss: 1.3724, train_c_index: 0.5962
+val/loss_surv, 1.025053147148962, 1
+val/c-index: 0.7014388489208633, 1
+
+Epoch: 2, train_loss_surv: 0.9807, train_loss: 0.9807, train_c_index: 0.5092
+val/loss_surv, 0.6151424389487753, 2
+val/c-index: 0.6990407673860911, 2
+
+Epoch: 3, train_loss_surv: 0.9076, train_loss: 0.9076, train_c_index: 0.3923
+val/loss_surv, 0.6024191715211297, 3
+val/c-index: 0.7134292565947242, 3
+
+Epoch: 4, train_loss_surv: 0.7117, train_loss: 0.7117, train_c_index: 0.7126
+val/loss_surv, 0.5880987631389871, 4
+val/c-index: 0.7122302158273381, 4
+
+Epoch: 5, train_loss_surv: 0.6953, train_loss: 0.6953, train_c_index: 0.7070
+val/loss_surv, 0.5653928242585001, 5
+val/c-index: 0.7182254196642686, 5
+
+Epoch: 6, train_loss_surv: 0.6956, train_loss: 0.6956, train_c_index: 0.7846
+val/loss_surv, 0.5703997675251836, 6
+val/c-index: 0.7266187050359713, 6
+
+Epoch: 7, train_loss_surv: 0.6857, train_loss: 0.6857, train_c_index: 0.7848
+val/loss_surv, 0.5716311528619068, 7
+val/c-index: 0.7302158273381295, 7
+
+Epoch: 8, train_loss_surv: 0.8023, train_loss: 0.8023, train_c_index: 0.7575
+val/loss_surv, 0.569193595952432, 8
+val/c-index: 0.7362110311750599, 8
+
+Epoch: 9, train_loss_surv: 0.7805, train_loss: 0.7805, train_c_index: 0.7776
+val/loss_surv, 0.568345041431409, 9
+val/c-index: 0.7338129496402878, 9
+Val c_index_small_loss: 0.7302 c_index_final 0.7338
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+1     34
+7    158
+6     15
+2     14
+5     49
+3     83
+4     16
+0     15
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+7    40
+5    12
+4     3
+2     4
+3    21
+1     8
+6     4
+0     4
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 1!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders...
+
+Epoch: 0, train_loss_surv: 1.5463, train_loss: 1.5463, train_c_index: 0.4602
+val/loss_surv, 0.8996827494508276, 0
+val/c-index: 0.6543478260869565, 0
+
+Epoch: 1, train_loss_surv: 1.3482, train_loss: 1.3482, train_c_index: 0.5310
+val/loss_surv, 0.8969852321315557, 1
+val/c-index: 0.658695652173913, 1
+
+Epoch: 2, train_loss_surv: 0.8703, train_loss: 0.8703, train_c_index: 0.4844
+val/loss_surv, 0.6496877786315357, 2
+val/c-index: 0.6467391304347826, 2
+
+Epoch: 3, train_loss_surv: 0.7720, train_loss: 0.7720, train_c_index: 0.6104
+val/loss_surv, 0.6125890435844971, 3
+val/c-index: 0.6565217391304348, 3
+
+Epoch: 4, train_loss_surv: 0.7107, train_loss: 0.7107, train_c_index: 0.7148
+val/loss_surv, 0.5927585199436484, 4
+val/c-index: 0.6641304347826087, 4
+
+Epoch: 5, train_loss_surv: 0.7092, train_loss: 0.7092, train_c_index: 0.6977
+val/loss_surv, 0.5925540292325119, 5
+val/c-index: 0.6815217391304348, 5
+
+Epoch: 6, train_loss_surv: 0.6884, train_loss: 0.6884, train_c_index: 0.7534
+val/loss_surv, 0.5873071912016409, 6
+val/c-index: 0.6826086956521739, 6
+
+Epoch: 7, train_loss_surv: 0.6806, train_loss: 0.6806, train_c_index: 0.7408
+val/loss_surv, 0.585924972469608, 7
+val/c-index: 0.683695652173913, 7
+
+Epoch: 8, train_loss_surv: 0.6652, train_loss: 0.6652, train_c_index: 0.7690
+val/loss_surv, 0.5856311624326432, 8
+
+Epoch: 9, train_loss_surv: 0.6573, train_loss: 0.6573, train_c_index: 0.7714
+val/loss_surv, 0.5896150343178306, 9
+val/c-index: 0.6923913043478261, 9
+Val c_index_small_loss: 0.6924 c_index_final 0.6924
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+7    158
+1     34
+6     15
+2     15
+5     48
+3     84
+4     15
+0     15
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+1     8
+7    40
+5    13
+3    20
+2     3
+6     4
+4     4
+0     4
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 2!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders... 
+
+Epoch: 0, train_loss_surv: 1.4958, train_loss: 1.4958, train_c_index: 0.5633
+val/loss_surv, 1.125720661599189, 0
+val/c-index: 0.7542918454935622, 0
+
+Epoch: 1, train_loss_surv: 1.2872, train_loss: 1.2872, train_c_index: 0.6502
+val/loss_surv, 0.7748766249666611, 1
+val/c-index: 0.7553648068669528, 1
+
+Epoch: 2, train_loss_surv: 0.8585, train_loss: 0.8585, train_c_index: 0.6162
+val/loss_surv, 0.7864978884657224, 2
+val/c-index: 0.8025751072961373, 2
+
+Epoch: 3, train_loss_surv: 0.9761, train_loss: 0.9761, train_c_index: 0.4215
+val/loss_surv, 0.6099138901530144, 3
+val/c-index: 0.776824034334764, 3
+
+Epoch: 4, train_loss_surv: 0.7462, train_loss: 0.7462, train_c_index: 0.5957
+val/loss_surv, 0.5861455077150216, 4
+val/c-index: 0.7575107296137339, 4
+
+Epoch: 5, train_loss_surv: 0.7161, train_loss: 0.7161, train_c_index: 0.6250
+val/loss_surv, 0.5820084008543441, 5
+val/c-index: 0.7607296137339056, 5
+
+Epoch: 6, train_loss_surv: 0.6827, train_loss: 0.6827, train_c_index: 0.7495
+val/loss_surv, 0.5642916643992066, 6
+val/c-index: 0.7532188841201717, 6
+
+Epoch: 7, train_loss_surv: 0.6711, train_loss: 0.6711, train_c_index: 0.7415
+val/loss_surv, 0.5639536144056668, 7
+val/c-index: 0.7639484978540773, 7
+
+Epoch: 8, train_loss_surv: 0.7611, train_loss: 0.7611, train_c_index: 0.7695
+val/loss_surv, 0.5617158561071847, 8
+val/c-index: 0.7682403433476395, 8
+
+Epoch: 9, train_loss_surv: 0.7465, train_loss: 0.7465, train_c_index: 0.7736
+val/loss_surv, 0.561776707705576, 9
+val/c-index: 0.7607296137339056, 9
+Val c_index_small_loss: 0.7639 c_index_final 0.7607
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+7    159
+1     33
+6     15
+2     15
+5     49
+3     83
+4     15
+0     15
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+7    39
+3    21
+5    12
+4     4
+6     4
+2     3
+1     9
+0     4
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 3!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders... 
+
+Epoch: 0, train_loss_surv: 1.5463, train_loss: 1.5463, train_c_index: 0.5060
+val/loss_surv, 1.1191942149307579, 0
+val/c-index: 0.6973833902161547, 0
+
+Epoch: 1, train_loss_surv: 1.2966, train_loss: 1.2966, train_c_index: 0.5999
+val/loss_surv, 0.9138680675532669, 1
+val/c-index: 0.6746302616609784, 1
+
+Epoch: 2, train_loss_surv: 0.9291, train_loss: 0.9291, train_c_index: 0.5444
+val/loss_surv, 0.6503798783135911, 2
+val/c-index: 0.6848691695108078, 2
+
+Epoch: 3, train_loss_surv: 0.9187, train_loss: 0.9187, train_c_index: 0.4681
+val/loss_surv, 0.6097169563193651, 3
+val/c-index: 0.7167235494880546, 3
+
+Epoch: 4, train_loss_surv: 0.7243, train_loss: 0.7243, train_c_index: 0.6829
+val/loss_surv, 0.5742969113440873, 4
+val/c-index: 0.726962457337884, 4
+
+Epoch: 5, train_loss_surv: 0.6776, train_loss: 0.6776, train_c_index: 0.7312
+val/loss_surv, 0.5762771417115194, 5
+val/c-index: 0.7303754266211604, 5
+
+Epoch: 6, train_loss_surv: 0.8633, train_loss: 0.8633, train_c_index: 0.6495
+val/loss_surv, 0.5705946544185281, 6
+val/c-index: 0.7303754266211604, 6
+
+Epoch: 7, train_loss_surv: 0.8101, train_loss: 0.8101, train_c_index: 0.7155
+val/loss_surv, 0.5721670778196616, 7
+val/c-index: 0.7428896473265074, 7
+
+Epoch: 8, train_loss_surv: 0.7623, train_loss: 0.7623, train_c_index: 0.7948
+val/loss_surv, 0.5819423977130403, 8
+val/c-index: 0.7428896473265074, 8
+
+Epoch: 9, train_loss_surv: 0.7466, train_loss: 0.7466, train_c_index: 0.8078
+val/loss_surv, 0.5867798092755644, 9
+val/c-index: 0.745164960182025, 9
+Val c_index_small_loss: 0.7452 c_index_final 0.7452
+Original training: 384, validation: 96
+Updated training set class distribution:
+label
+7    157
+1     34
+6     15
+2     15
+5     51
+3     82
+4     16
+0     14
+Name: count, dtype: int64
+Updated validation set class distribution:
+label
+7    41
+5    10
+3    22
+1     8
+2     3
+6     4
+4     3
+0     5
+Name: count, dtype: int64
+training: 384, validation: 96, removing:250
+
+Training Fold 4!
+
+Init train/val/test splits... 
+Training on 384 samples
+Validating on 96 samples
+remove on 250 samples
+
+Init loss function... 
+Init Model... 
+Init optimizer ... 
+Init Loaders... 
+
+Epoch: 0, train_loss_surv: 1.4669, train_loss: 1.4669, train_c_index: 0.5285
+val/loss_surv, 1.1009527686983347, 0
+val/c-index: 0.7173689619732785, 0
+
+Epoch: 1, train_loss_surv: 1.3021, train_loss: 1.3021, train_c_index: 0.5948
+val/loss_surv, 0.8380518012369672, 1
+val/c-index: 0.7019527235354573, 1
+
+Epoch: 2, train_loss_surv: 0.9099, train_loss: 0.9099, train_c_index: 0.5327
+val/loss_surv, 0.5805224067686746, 2
+val/c-index: 0.6998972250770812, 2
+
+Epoch: 3, train_loss_surv: 0.8504, train_loss: 0.8504, train_c_index: 0.5116
+val/loss_surv, 0.5869217712509757, 3
+val/c-index: 0.7225077081192189, 3
+
+Epoch: 4, train_loss_surv: 0.6960, train_loss: 0.6960, train_c_index: 0.7259
+val/loss_surv, 0.560691940355658, 4
+val/c-index: 0.7327852004110997, 4
+
+Epoch: 5, train_loss_surv: 0.6775, train_loss: 0.6775, train_c_index: 0.7378
+val/loss_surv, 0.5548278944722066, 5
+val/c-index: 0.7358684480986639, 5
+
+Epoch: 6, train_loss_surv: 0.7812, train_loss: 0.7812, train_c_index: 0.7463
+val/loss_surv, 0.5543487225368153, 6
+val/c-index: 0.7389516957862282, 6
+
+Epoch: 7, train_loss_surv: 0.7533, train_loss: 0.7533, train_c_index: 0.7747
+val/loss_surv, 0.5533818040955035, 7
+val/c-index: 0.7523124357656732, 7
+
+Epoch: 8, train_loss_surv: 0.7307, train_loss: 0.7307, train_c_index: 0.8191
+val/loss_surv, 0.5564238738637263, 8
+val/c-index: 0.7523124357656732, 8
+
+Epoch: 9, train_loss_surv: 0.7155, train_loss: 0.7155, train_c_index: 0.8202
+val/loss_surv, 0.5539386178376541, 9
+val/c-index: 0.7533401849948612, 9
+Val c_index_small_loss: 0.7533 c_index_final 0.7533
+c-index small loss [0.7302158273381295, 0.6923913043478261, 0.7639484978540773, 0.745164960182025, 0.7533401849948612]
+Average c-index small loss 0.7370121549433838
+/n
+c-index final [0.7338129496402878, 0.6923913043478261, 0.7607296137339056, 0.745164960182025, 0.7533401849948612]
+Average c-index final 0.7370878025797811
+finished!
