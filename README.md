@@ -69,12 +69,12 @@ The typical pre-processing pipeline is:
 Expected feature directory:
 
 ```text
-TCGA_FEATURES/
+tcga_features/
 └── pt_files/
     ├── TCGA_case_001.pt
     └── ...
 
-CPTAC_FEATURES/
+cptac_features/
 └── pt_files/
     ├── CPTAC_case_001.pt
     └── ...
@@ -98,7 +98,7 @@ Run Morph-MIL using only labeled TCGA data:
 ```
 python main_ucec.py \
     --semi_sup False \
-    --data_dir /path/to/TCGA_FEATURES \
+    --data_dir /path/to/tcga_features \
     --label_file /path/to/clinical_labels.csv
 ```    
 ### Fully supervised
@@ -106,8 +106,8 @@ Run the proposed semi-supervised framework using labeled TCGA data and unlabeled
 ```
 python main_ucec.py \
     --semi_sup True \
-    --data_dir /path/to/TCGA_FEATURES \
-    --add_data_dir /path/to/CPTAC_FEATURES \
+    --data_dir /path/to/tcga_features \
+    --add_data_dir /path/to/cptac_features \
     --label_file /path/to/clinical_labels.csv
 ```
 ## Evaluation
