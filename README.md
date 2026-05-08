@@ -53,7 +53,6 @@ CPTAC pathology images can be downloaded from the official CPTAC/TCIA collection
 
 Please download the corresponding CPTAC cohorts and organize them consistently with the TCGA data.
 
----
 
 ## WSI Pre-processing
 
@@ -115,6 +114,7 @@ The main evaluation metric is the concordance index (C-index). Detailed experime
 
 ##  Visualization
 Morph-MIL supports prototype-level visualization and biological interpretation.
+
 ![Framework](Figures/figure2.png)
 
 The figure shows the original WSI, prototype alignment map, risk attribution heatmap, prototype-wise predictive contribution, and prototype-associated cellular compositions with representative patches. These visualizations indicate that Morph-MIL can capture spatially structured and prognosis-relevant morphological patterns.
