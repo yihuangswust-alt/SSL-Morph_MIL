@@ -114,11 +114,10 @@ python main_ucec.py \
 The main evaluation metric is the concordance index (C-index). Detailed experimental settings, quantitative results, ablation studies, and visualization analyses are provided in our paper.
 
 ##  Visualization
-
+Morph-MIL supports prototype-level visualization and biological interpretation.
 ![Framework](Figures/figure2.png)
 
-![Framework](Figures/figure3.png)
-
+The figure shows the original WSI, prototype alignment map, risk attribution heatmap, prototype-wise predictive contribution, and prototype-associated cellular compositions with representative patches. These visualizations indicate that Morph-MIL can capture spatially structured and prognosis-relevant morphological patterns.
 ## Citation
 If you find this repository useful, please cite our paper:
 ```
