@@ -113,6 +113,12 @@ python main_ucec.py \
 ## Evaluation
 The main evaluation metric is the concordance index (C-index). Detailed experimental settings, quantitative results, ablation studies, and visualization analyses are provided in our paper.
 
+##  Visualization
+
+![Framework](Figures/figure2.png)
+
+![Framework](Figures/figure3.png)
+
 ## Citation
 If you find this repository useful, please cite our paper:
 ```
