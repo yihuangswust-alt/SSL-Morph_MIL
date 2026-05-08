@@ -101,7 +101,7 @@ python main_ucec.py \
     --data_dir /path/to/tcga_features \
     --label_file /path/to/clinical_labels.csv
 ```    
-### Fully supervised
+### Semi-supervised
 Run the proposed semi-supervised framework using labeled TCGA data and unlabeled CPTAC data:
 ```
 python main_ucec.py \
