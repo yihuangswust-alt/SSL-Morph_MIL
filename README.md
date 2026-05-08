@@ -95,19 +95,21 @@ conda env create -f morphmil_env.yaml
 ## Model training and testing
 ### Fully supervised
 Run Morph-MIL using only labeled TCGA data:
+```
 python main_ucec.py \
     --semi_sup False \
     --data_dir /path/to/TCGA_FEATURES \
     --label_file /path/to/clinical_labels.csv
-    
+```    
 ### Fully supervised
 Run the proposed semi-supervised framework using labeled TCGA data and unlabeled CPTAC data:
+```
 python main_ucec.py \
     --semi_sup True \
     --data_dir /path/to/TCGA_FEATURES \
     --add_data_dir /path/to/CPTAC_FEATURES \
     --label_file /path/to/clinical_labels.csv
-
+```
 ## Evaluation
 The main evaluation metric is the concordance index (C-index). Please refer to our paper for detailed evaluation results.
 
