@@ -119,7 +119,7 @@ Morph-MIL supports prototype-level visualization and biological interpretation.
 
 The figure shows the original WSI, prototype alignment map, risk attribution heatmap, prototype-wise predictive contribution, and prototype-associated cellular compositions with representative patches. These visualizations indicate that Morph-MIL can capture spatially structured and prognosis-relevant morphological patterns.
 ## Citation
-If you find this repository useful, please cite our paper:
+If you find this repository useful, please cite our paper (citation information will be added later.):
 ```
 @article{huang2026scalable,
   title={Towards Scalable Cancer Prognosis by Aligning Semi-supervised Learning with Survival Modeling},
