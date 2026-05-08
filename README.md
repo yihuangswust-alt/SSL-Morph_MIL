@@ -129,9 +129,9 @@ If you find this repository useful, please cite our paper:
   year={2026}
 }
 ```
+
 ## Acknowledgement
-We thank the maintainers of TCGA, CPTAC, TRIDENT, UNI, CONCH, and related open-source computational pathology resources.
 
-
+We thank the maintainers of [TCGA/GDC](https://portal.gdc.cancer.gov/), [CPTAC](https://proteomics.cancer.gov/programs/cptac), [TRIDENT](https://github.com/mahmoodlab/TRIDENT), [UNI](https://github.com/mahmoodlab/UNI), [CONCH](https://github.com/mahmoodlab/CONCH), and [Surformer](https://github.com/ZacharyWang-007/Surformer), as well as the broader open-source computational pathology community.
 
 
