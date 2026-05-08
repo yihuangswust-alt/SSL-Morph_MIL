@@ -111,7 +111,7 @@ python main_ucec.py \
     --label_file /path/to/clinical_labels.csv
 ```
 ## Evaluation
-The main evaluation metric is the concordance index (C-index). Please refer to our paper for detailed evaluation results.
+The main evaluation metric is the concordance index (C-index). Detailed experimental settings, quantitative results, ablation studies, and visualization analyses are provided in our paper.
 
 ## Citation
 If you find this repository useful, please cite our paper:
