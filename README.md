@@ -117,7 +117,7 @@ The main evaluation metric is the concordance index (C-index). Detailed experime
 ##  Visualization
 Morph-MIL supports prototype-level visualization and biological interpretation.
 
-![Framework](Figures/figure2.pdf)
+![Framework](Figures/figure2.png)
 
 The figure shows the original WSI, prototype alignment map, risk attribution heatmap, prototype-wise predictive contribution, and prototype-associated cellular compositions with representative patches. These visualizations indicate that Morph-MIL can capture spatially structured and prognosis-relevant morphological patterns.
 ## Citation
@@ -126,7 +126,7 @@ If you find this repository useful, please cite our paper (citation information 
 @article{huang2026scalable,
   title={Towards Scalable Cancer Prognosis by Aligning Semi-supervised Learning with Survival Modeling},
   author={Huang, Yi and Cai, Linghan and Feng, Ziliang and Zhao, Mengjie and Tu, Xiaoguang and Yuan, Zhiyuan and Wang, Zhikang},
-  journal={xxx},
+  journal={Medical Image Analysis},
   year={2026}
 }
 ```
