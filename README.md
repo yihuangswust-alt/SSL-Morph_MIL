@@ -4,7 +4,7 @@ Code release for our paper:
 **Towards Scalable Cancer Prognosis by Aligning Semi-supervised Learning with Survival Modeling.**
 This repository provides the code for a semi-supervised multiple instance learning (MIL) framework for whole-slide image (WSI)-based cancer prognosis. The proposed framework integrates Morph-MIL, a dynamic memory bank, and a temporal pseudo-labeling strategy to improve WSI survival modeling under limited survival annotations.
 
-🎉  **Our paper has been accepted by Medical Image Analysis.** 
+🎉  **Our paper has been accepted by Medical Image Analysis.** 🎉 
 
 ## Overview
 
