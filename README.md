@@ -123,11 +123,13 @@ The figure shows the original WSI, prototype alignment map, risk attribution hea
 ## Citation
 If you find this repository useful, please cite our paper:
 ```
-@article{huang2026scalable,
-  title={Towards Scalable Cancer Prognosis by Aligning Semi-supervised Learning with Survival Modeling},
+@article{huang2026towards,
+  title={Towards scalable cancer prognosis by aligning semi-supervised learning with survival modeling},
   author={Huang, Yi and Cai, Linghan and Feng, Ziliang and Zhao, Mengjie and Tu, Xiaoguang and Yuan, Zhiyuan and Wang, Zhikang},
   journal={Medical Image Analysis},
-  year={2026}
+  pages={104347},
+  year={2026},
+  publisher={Elsevier}
 }
 ```
 
